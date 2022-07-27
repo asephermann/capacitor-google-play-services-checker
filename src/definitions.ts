@@ -4,12 +4,5 @@ export interface GooglePlayServicesCheckerPlugin {
  *
  * 
  */
-  check(options: CheckerOptions): Promise<void>;
-}
-
-export interface CheckerOptions {
-  /**
-   * Google Play Services Availability check result.
-  */
-  isAvailable: boolean;
+  check(): Promise<{ isAvailable: boolean }>;
 }

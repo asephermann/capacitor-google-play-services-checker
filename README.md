@@ -13,36 +13,23 @@ npx cap sync
 
 <docgen-index>
 
-* [`check(...)`](#check)
-* [Interfaces](#interfaces)
+* [`check()`](#check)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### check(...)
+### check()
 
 ```typescript
-check(options: CheckerOptions) => Promise<void>
+check() => Promise<{ isAvailable: boolean; }>
 ```
 
 Check if Google Play Services is available.
 
-| Param         | Type                                                      |
-| ------------- | --------------------------------------------------------- |
-| **`options`** | <code><a href="#checkeroptions">CheckerOptions</a></code> |
+**Returns:** <code>Promise&lt;{ isAvailable: boolean; }&gt;</code>
 
 --------------------
-
-
-### Interfaces
-
-
-#### CheckerOptions
-
-| Prop              | Type                 | Description                                     |
-| ----------------- | -------------------- | ----------------------------------------------- |
-| **`isAvailable`** | <code>boolean</code> | Google Play Services Availability check result. |
 
 </docgen-api>

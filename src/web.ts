@@ -1,10 +1,12 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { GooglePlayServicesCheckerPlugin } from './definitions';
+import type { GooglePlayServicesCheckerPlugin, CheckerOptions } from './definitions';
 
 export class GooglePlayServicesCheckerWeb extends WebPlugin implements GooglePlayServicesCheckerPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+
+  async check(result: CheckerOptions): Promise<void> {
+    
+    console.log('RESULT', result.isAvailable);
   }
+
 }

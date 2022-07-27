@@ -11,9 +11,36 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`check(...)`](#check)
+* [Interfaces](#interfaces)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### check(...)
+
+```typescript
+check(options: CheckerOptions) => Promise<void>
+```
+
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#checkeroptions">CheckerOptions</a></code> |
+
+--------------------
+
+
+### Interfaces
+
+
+#### CheckerOptions
+
+| Prop              | Type                 |
+| ----------------- | -------------------- |
+| **`isAvailable`** | <code>boolean</code> |
+
 </docgen-api>

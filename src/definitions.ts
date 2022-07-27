@@ -1,3 +1,7 @@
 export interface GooglePlayServicesCheckerPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  check(options: CheckerOptions): Promise<void>;
+}
+
+export interface CheckerOptions {
+  isAvailable: boolean;
 }

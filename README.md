@@ -9,6 +9,18 @@ npm install capacitor-google-play-services-checker
 npx cap sync
 ```
 
+## Example
+
+```typescript
+import { GooglePlayServicesChecker } from 'capacitor-google-play-services-checker';
+
+check = async () => {
+  const checkResult = await GooglePlayServicesChecker.check();
+
+  console.log('Google Play Services Available:', checkResult.isAvailable);
+};
+```
+
 ## API
 
 <docgen-index>

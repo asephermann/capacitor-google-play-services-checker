@@ -27,6 +27,8 @@ npx cap sync
 check(options: CheckerOptions) => Promise<void>
 ```
 
+Check if Google Play Services is available.
+
 | Param         | Type                                                      |
 | ------------- | --------------------------------------------------------- |
 | **`options`** | <code><a href="#checkeroptions">CheckerOptions</a></code> |
@@ -39,8 +41,8 @@ check(options: CheckerOptions) => Promise<void>
 
 #### CheckerOptions
 
-| Prop              | Type                 |
-| ----------------- | -------------------- |
-| **`isAvailable`** | <code>boolean</code> |
+| Prop              | Type                 | Description                                     |
+| ----------------- | -------------------- | ----------------------------------------------- |
+| **`isAvailable`** | <code>boolean</code> | Google Play Services Availability check result. |
 
 </docgen-api>

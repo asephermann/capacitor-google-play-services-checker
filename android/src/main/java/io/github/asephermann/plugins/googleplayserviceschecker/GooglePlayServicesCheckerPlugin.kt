@@ -8,12 +8,12 @@ import com.getcapacitor.annotation.CapacitorPlugin
 
 @CapacitorPlugin(name = "GooglePlayServicesChecker")
 class GooglePlayServicesCheckerPlugin : Plugin() {
-    private val implementation = GooglePlayServicesChecker(this.activity.applicationContext)
+    private val implementation = GooglePlayServicesChecker()
 
     @PluginMethod
     fun check(call: PluginCall) {
         val ret = JSObject()
-        ret.put("isAvailable", implementation.check())
+        ret.put("isAvailable", implementation.check(context))
         call.resolve(ret)
 
         call.resolve()
